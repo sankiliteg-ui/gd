@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Night Ankku Dii</title>
+    <style>
+        /* Deep Night Animated Background */
+        body {
+            margin: 0;
+            padding: 10px;
+            background: #0b0d17;
+            background-image: 
+                radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+                radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+                radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px);
+            background-size: 550px 550px, 350px 350px, 250px 250px;
+            color: #ffffff;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+            animation: backgroundMove 60s linear infinite;
+        }
+
+        @keyframes backgroundMove {
+            from { background-position: 0 0; }
+            to { background-position: 550px 1100px; }
+        }
+
+        .container {
+            width: 90%;
+            max-width: 380px;
+            background: rgba(255, 255, 255, 0.07);
+            backdrop-filter: blur(15px);
+            border-radius: 40px;
+            padding: 30px 20px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+            text-align: center;
+        }
+
+        /* Blinking Name Animation */
+        @keyframes blinkName {
+            0%, 100% { color: #f9d342; text-shadow: 0 0 15px #f9d342, 0 0 30px #f9d342; transform: scale(1); }
+            50% { color: #ffffff; text-shadow: 0 0 5px #fff; transform: scale(1.05); }
+        }
+
+        .sister-name {
+            font-size: 2.8rem;
+            font-weight: 800;
+            display: block;
+            margin: 15px 0;
+            animation: blinkName 2s ease-in-out infinite;
+        }
+
+        h1 { font-size: 1.4rem; color: #dcdde1; margin-bottom: 0; font-weight: 300; letter-spacing: 1px; }
+
+        /* Heartfelt Message Box */
+        .message-card {
+            background: linear-gradient(135deg, rgba(108, 92, 231, 0.8), rgba(162, 155, 254, 0.8));
+            padding: 22px;
+            border-radius: 25px;
+            margin: 25px 0;
+            font-size: 1.15rem;
+            line-height: 1.6;
+            color: #ffffff;
+            font-weight: 500;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        /* Osho Section */
+        .osho-box {
+            padding: 15px;
+            margin: 20px 0;
+            border-left: 3px solid #f9d342;
+            background: rgba(255, 211, 66, 0.05);
+            text-align: left;
+        }
+
+        .osho-box p { margin: 0; font-style: italic; font-size: 0.95rem; line-height: 1.4; color: #f1f2f6; }
+        .promise-tag { color: #f9d342; font-weight: bold; display: block; margin-top: 15px; text-align: center; font-size: 1rem; }
+
+        /* Floating Elements */
+        .moon { font-size: 3.5rem; filter: drop-shadow(0 0 20px rgba(255,255,255,0.5)); animation: float 3s ease-in-out infinite; }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .footer-text { font-size: 0.85rem; color: #a29bfe; margin-top: 25px; letter-spacing: 1px; text-transform: uppercase; }
+        .heart { color: #ff4d4d; animation: beat 1s infinite; display: inline-block; }
+
+        @keyframes beat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="moon">🌙</div>
+        <h1>Good Night,</h1>
+        <span class="sister-name">Ankku Dii</span>
+
+        <div class="message-card">
+            "Aap bahut zyada mehnat karti ho, par thoda apni health ka bhi dhyan rakha karo. 
+            Bas thoda intezar aur... ek din aapka bhai success hoga, phir aapko itna kaam nahi karne dunga. 
+            Yeh mera waada hai! 
+        </div>
+
+        <div class="osho-box">
+            <p>"Life begins where fear ends." — Osho</p>
+            <span class="promise-tag">Aap tension mat lo, Main hoon na! ✨</span>
+        </div>
+
+        <p class="footer-text">Sweetest Dreams to the Best Sister <span class="heart">❤</span></p>
+        <p style="font-size: 1.3rem; font-weight: bold; margin-top: 10px; color: #f9d342;">Ab So Jao</p>
+    </div>
+
+</body>
+</html>
